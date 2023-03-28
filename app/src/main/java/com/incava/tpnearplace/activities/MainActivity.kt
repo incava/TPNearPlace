@@ -1,7 +1,8 @@
-package com.incava.tpnearplace
+package com.incava.tpnearplace.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.incava.tpnearplace.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
