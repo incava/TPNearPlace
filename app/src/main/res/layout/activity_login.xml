@@ -6,4 +6,116 @@
     android:layout_height="match_parent"
     tools:context=".activities.LoginActivity">
 
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Near Place"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_tv_go"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="장소를 둘러보세요"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <ImageView
+        android:id="@+id/iv_kakao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/icon_kakako"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_google"
+        app:layout_constraintEnd_toStartOf="@+id/iv_google"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toTopOf="@+id/iv_google" />
+
+
+    <ImageView
+        android:id="@+id/iv_google"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:src="@drawable/icon_google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_naver"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_kakao"
+        app:layout_constraintTop_toBottomOf="@+id/tv_place"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <ImageView
+        android:id="@+id/iv_naver"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/icon_naver"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_google"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_google"
+        app:layout_constraintTop_toTopOf="@+id/iv_google" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_login_btn"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/iv_google">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/baseline_email_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원가입"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="553dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_btn"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="회원가입"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/linear"
+        app:layout_constraintStart_toStartOf="@+id/linear"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
