@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this,SignupActivity::class.java))
         }
         binding.linearLogin.setOnClickListener {
-            startActivity(Intent(this,SignupActivity::class.java))
+            startActivity(Intent(this,EmailSigninActivity::class.java))
         }
 
         binding.ivKakao.setOnClickListener { clickedLoginKakao() }

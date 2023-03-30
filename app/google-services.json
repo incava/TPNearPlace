@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805992509095",
+    "project_id": "incavanearplace",
+    "storage_bucket": "incavanearplace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805992509095:android:9f508fef7287e2b94fb582",
+        "android_client_info": {
+          "package_name": "com.incava.tpnearplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805992509095-uokt8qgbge0poed1911lgf7dcp0icmgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4hMxsjHJ635e9QItr_L5d4oxtgDuU_oE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805992509095-uokt8qgbge0poed1911lgf7dcp0icmgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
