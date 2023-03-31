@@ -14,7 +14,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "805992509095-uokt8qgbge0poed1911lgf7dcp0icmgb.apps.googleusercontent.com",
+          "client_id": "805992509095-2kt28qf4so8cim2fatsd593vvguv4742.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.incava.tpnearplace",
+            "certificate_hash": "d28ff2b8e618fb8465245893690d609b73bfad86"
+          }
+        },
+        {
+          "client_id": "805992509095-omk36ksn40v4i4aevq72ffvritar6g43.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -27,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "805992509095-uokt8qgbge0poed1911lgf7dcp0icmgb.apps.googleusercontent.com",
+              "client_id": "805992509095-omk36ksn40v4i4aevq72ffvritar6g43.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
