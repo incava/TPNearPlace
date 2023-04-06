@@ -30,7 +30,7 @@ class PlaceListFragment : Fragment() {
 //        ma.searchPlaceResponse ?: return
 //        binding.recycler.adapter = PlaceListRecyclerAdapter(ma.searchPlaceResponse!!.documents)
         ma.searchPlaceResponse?.apply {
-            binding.recycler.adapter = PlaceListRecyclerAdapter(documents)
+            binding.recycler.adapter = PlaceListRecyclerAdapter(requireActivity(),documents)
         }
 
     }
