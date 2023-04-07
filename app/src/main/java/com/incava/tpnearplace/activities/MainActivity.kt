@@ -84,11 +84,14 @@ class MainActivity : AppCompatActivity() {
         })
 
         // 소프트키보드의 검색버튼을 클릭하였을때
-        binding.etSearch.setOnEditorActionListener { textView, i, keyEvent ->
-            searchQuery = binding.etSearch.text.toString()
-            //카카오 검색API를 이용해 장소들 검색하기
-            searchPlace()
-            false
+        binding.etSearch.apply {
+            setOnEditorActionListener { textView, i, keyEvent ->
+                searchQuery = text.toString()
+                //카카오 검색API를 이용해 장소들 검색하기
+                setText("")
+                searchPlace()
+                false
+            }
         }
         //특정 키워드 단축 검색 버튼들이 리스너 처리하는 함수 호출.
         setChoiceButtonsListener()
@@ -166,7 +169,8 @@ class MainActivity : AppCompatActivity() {
                 searchPlaceResponse = response.body()
                 //Toast.makeText(this@MainActivity, "${searchPlaceResponse?.meta?.total_count}", Toast.LENGTH_SHORT).show()
                 //만들어 지면 뷰를 다시 만들어 보여주도록.
-                supportFragmentManager.beginTransaction().replace(R.id.container_fragment, PlaceListFragment()).commit()
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.container_fragment, PlaceListFragment()).commit()
 
                 //탭버튼의 위치를 ListFragment tab으로 변경
                 binding.tabLayout.getTabAt(0)?.select()

@@ -85,7 +85,7 @@ class PlaceMapFragment : Fragment() {
     // 마커 or 말풍선 클릭 이벤트 리스너
     val markerEventListener: POIItemEventListener = object : POIItemEventListener {
         override fun onPOIItemSelected(p0: MapView?, p1: MapPOIItem?) {
-            //마커를 클릭했을 때 발동!
+            //마커를 클릭했을 때 발동!<- 여기 부분이 누르면 그 좌표가 중심점으로 이동.
             var place = (p1?.userObject as Place)
             mapView.setMapCenterPoint(
                 MapPoint.mapPointWithGeoCoord(
