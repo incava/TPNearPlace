@@ -60,6 +60,8 @@ class PlaceMapFragment : Fragment() {
                 mapPoint = myMapPoint
                 markerType = MapPOIItem.MarkerType.BluePin
                 selectedMarkerType = MapPOIItem.MarkerType.YellowPin
+                //userObject를 맞춰줘야하므로 넣어주기.
+                userObject = Place("","","","","","",lng.toString(),lat.toString(),"","")
             }
             mapView.addPOIItem(marker)
 
@@ -108,6 +110,7 @@ class PlaceMapFragment : Fragment() {
             //두번째 파라미터 p1 : 클릭한 마커의 객체.
             p1?.userObject ?: return
             val place = (p1.userObject as Place)
+            if (place.place_url == "") return // url이 없다면 return
             val intent = Intent(context, PlaceUrlActivity::class.java)
             intent.putExtra("place_url", place.place_url)
             startActivity(intent)
