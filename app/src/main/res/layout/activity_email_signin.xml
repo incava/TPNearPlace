@@ -16,7 +16,7 @@
     <ImageView
         android:layout_width="128dp"
         android:layout_height="120dp"
-        android:src="@drawable/near_rogo"
+        android:src="@drawable/near_extend_rogo"
         android:layout_marginTop="48dp"
         />
     <LinearLayout

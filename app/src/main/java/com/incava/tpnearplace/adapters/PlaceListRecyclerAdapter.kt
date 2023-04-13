@@ -24,7 +24,8 @@ class PlaceListRecyclerAdapter(val context : Context, var documents: MutableList
     override fun onBindViewHolder(holder: VH, position: Int) {
         val place = documents[position]
         holder.binding.apply {
-            tvPlaceName.text = if(place.road_address_name =="") place.address_name else place.road_address_name
+            tvPlaceName.text = place.place_name
+            tvAddress.text = if(place.road_address_name =="") place.address_name else place.road_address_name
             tvDistance.text = "${place.distance}m"
             root.setOnClickListener{
                 val intent = Intent(context,PlaceUrlActivity::class.java)

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="aa" android:id="@+id/menu_aa"/>
-    <item android:title="bb" android:id="@+id/menu_bb"/>
+    <item
+        android:id="@+id/menu_aa"
+        android:title="HELP" />
+    <item
+        android:id="@+id/menu_bb"
+        android:title="사용했던 라이브러리" />
 </menu>
